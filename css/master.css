@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-outline {
+  border: none;
+  outline: none;
+}
+
+.border-raduis50 {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container {
+  height: 100vh;
+  padding: 5px;
+  display: flex;
+  gap: 50px;
+}
+
+/* Start Aside */
+
+.container .aside {
+  padding-top: 80px;
+  background-color: #1347ca;
+  width: 50px;
+}
+
+.container .aside .icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.container .aside .icons div {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.container .aside .icons div i {
+  color: white;
+}
+
+.container .aside .icons div:hover {
+  background-color: #1652F0;
+}
+
+/* End Aside */
+
+.container .content {
+  width: 100%;
+}
+
+/* Start Header  */
+
+.container .content .header{
+  padding: 15px 15px 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.container .content .header > div {
+  display: flex;
+  align-items: center;
+}
+
+.container .content .header > div:first-child {
+  color: #1652F0;
+  gap: 10px;
+}
+
+.container .content .header > div:first-child div i {
+  font-size: 28px;
+}
+
+.container .content .header > div:first-child h4 {
+  font-size: 20px;
+}
+
+.container .content .header > div:last-child .tran {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bold;
+  background-image: linear-gradient(to right,
+  #EEF2FE 50%,
+  #FFFFFF 50%
+  );
+  width: 200px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.container .content .header > div:last-child > .tran div {
+  color: #7196F6;
+}
+
+.container .content .header > div:last-child > div:first-child span {
+  color: #9AABC4;
+}
+
+.container .content .header > div:last-child > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1652F0;
+  width: 35px;
+  height: 35px;
+  margin: 0px 10px 0 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container .content .header > div:last-child > div:nth-child(2) i {
+  font-size: 13px;
+  color: white;
+}
+
+.container .content .header > div:last-child > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #a0a9b6;
+}
+
+.container .content .header > div:last-child > div:nth-child(3) i {
+  font-size: 12px;
+}
+
+/* End Header */
+
+/* Start Content */
+
+.content > hr {
+  width: calc(100% + 50px);
+  margin-left: -50px;
+  border: none;
+  border-top: 1px solid #DDD;
+}
+
+.content > h5 {
+  margin: 20px 0 50px 0;
+  color: #1652F0;
+}
+
+.content > h5 span {
+  color: #a0a9b6;
+}
+
+.content > .box {
+  display: flex;
+  gap: 70px;
+}
+
+.content > .box > .one {
+  width: 40%;
+}
+
+.content > .box .one > div:first-child {
+  margin-bottom: 15px;
+}
+
+.content > .box .one > div:first-child button {
+  width: 40%;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-right: 15px;
+}
+
+.content > .box .one > div:first-child button:first-child {
+  background-color: #1347ca;
+  color: white;
+}
+
+.content > .box .one > div:first-child button:last-child {
+  background-color: #f1f1f1;
+  color: #1347ca;
+}
+
+.content > .box .one div:not(:first-child) {
+  height: 37px;
+  margin-bottom: 55px;
+}
+
+.content > .box .one label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.content > .box .one select , .content > .box .one input {
+  border: none;
+  outline: none;
+  width: 210px;
+  width: 50%;
+  padding: 10px 0 10px 15px;
+  background-color: #F2F6FE;
+  height: 100%;
+} 
+
+.content > .box .one input {
+  margin-left: -5px;
+}
+
+.content > .box .one select {
+  color: #575a60;
+}
+
+.content > .box .one .lastdiv{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 13px;
+  margin-bottom: 0px !important;
+}
+
+.content > .box .one .lastdiv div:first-child{
+  color: #9AABC4;
+}
+
+.content > .box .one > .but{
+  width: 100%;
+  padding: 14px 0;
+  font-weight: bold;
+  background-color: #0f9c57;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.content > .box .one > p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Start Two */
+
+.content > .box .two {
+  width: calc(60% - 70px - 50px);
+}
+
+.content > .box .two .cont {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.content > .box .two .box {
+  display: flex;
+  gap: 15px;
+}
+
+.content > .box .two .image {
+  width: 50px;
+  height: 50px;
+}
+
+.content > .box .two .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.content > .box .two h5 {
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.content > .box .two .end{
+  text-align: end;
+}
+
+.content > .box .two h5 + div {
+  font-size: 12px;
+  color: #1652F0;
+}
+
+.content > .box .two .with {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.content > .box .two .with div {
+  background-color: #F2F6FE;;
+  padding: 15px;
+}
+
+.content > .box .two .with div:first-child {
+  width: 46%;
+}
+
+.content > .box .two .with div:last-child  {
+  width: 54%;
+}
+
+.blue {
+  color: #1652F0;
+}
+
+.gray {
+  color: #a0a9b6;
+}
+
+.red {
+  color: rgb(209, 6, 6);
+}
+
+/* End Two */
